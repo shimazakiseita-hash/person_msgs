@@ -18,6 +18,7 @@ if(BUILD_TESTING)
   find_package(rosidl_default_generators REQUIRED)
   rosidl_generate_interfaces(${PROJECT_NAME}
     "msg/Person.msg"
+    "srv/Query.srv"
   )
   set(ament_cmake_copyright_FOUND TRUE)
   # the following line skips cpplint (only works in a git repo)
